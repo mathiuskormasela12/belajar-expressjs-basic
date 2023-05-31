@@ -1,0 +1,44 @@
+{
+  "name": "belajar-expressjs-basic",
+  "version": "1.0.0",
+  "description": "Belajar Express Js Basic",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+		"verbose": true,
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathiuskormasela12/belajar-expressjs-basic.git"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs"
+  ],
+  "author": "Mathius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mathiuskormasela12/belajar-expressjs-basic/issues"
+  },
+  "homepage": "https://github.com/mathiuskormasela12/belajar-expressjs-basic#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.4",
+    "babel-jest": "^29.5.0",
+    "eslint": "^8.41.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
