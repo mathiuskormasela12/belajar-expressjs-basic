@@ -90,6 +90,10 @@ app.use(expressFileUpload({
   createParentPath: true
 }))
 
+// Setup view engine
+app.set('views', join(__dirname, '../templates'))
+app.set('view engine', 'ejs')
+
 // Untuk memparsing request body menjadi text
 // app.use(express.text())
 
@@ -250,6 +254,17 @@ router.get('/biodata', (req, res) => {
         nama: 'Musik'
       }
     ]
+  })
+})
+
+router.get('/home', (req, res) => {
+  res.render('home', {
+    name: 'Mathius',
+    value: 90,
+    data: {
+      name: 'Mathius Kormasela',
+      old: 22
+    }
   })
 })
 
